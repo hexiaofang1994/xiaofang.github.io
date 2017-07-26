@@ -1,0 +1,391 @@
+@charset "UTF-8";
+.main{
+    width: 100%;
+    height: 480px;
+
+    /*position: relative;*/
+}
+.main .bigBg{
+    width: 100%;
+    height: 480px;
+    position: absolute;
+}
+.bigBg a{
+    display: block;
+    width: 100%;
+    height: 480px;
+    background: url("../images/background.png")no-repeat center center;
+}
+.main .main-inner{
+    height: 480px;
+    margin: 0 auto;
+    overflow:hidden;
+    position: relative;
+}
+.menu{
+    height: 464px;
+    width: 190px;
+    background-color:#6e6568;
+    margin-right: 10px;
+    padding-top:16px;
+}
+.menu li{
+    padding-left: 12px;
+}
+.menu a{
+    line-height: 30px;
+    color:#fff;
+    font-size: 14px;
+}
+.menu li:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+.menu span{
+    margin:0 3px;
+    color:#fff;
+}
+.silder{
+    height: 480px;
+    width: 790px;
+    overflow: hidden;
+}
+.silder-main{
+    width: 790px;
+    height: 340px;
+    position: relative;
+}
+.silder .point{
+    background-color: rgba(255,255,255,0.5);
+    width: 166px;
+    height: 12px;
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    margin-left: -91px;
+    border-radius:10px;
+    padding:4px 8px;
+}
+.silder .point li{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.silder .point .rand1{
+    float: right;
+    margin-right: 0px;
+}
+.silder .point .rand2{
+    background-color:#db192a;
+}
+.arrow{
+   display: none;
+}
+.arrow-left,.arrow-right{
+    height: 60px;
+    width: 30px;
+    background-color:rgba(0,0,0,0.3);
+    font:bold 20px/60px "simsun";
+    position: absolute;
+    top:50%;
+    margin-top: -30px;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-left{
+    left:0px;
+}
+.arrow-right{
+    right:0px;
+}
+.arrow-left:hover,.arrow-right:hover{
+    background-color:rgba(0,0,0,0.6);
+}
+.silder-main:hover .arrow{
+    display: block;
+}
+/*底部*/
+.silder .silder-extend{
+    height: 130px;
+    margin-top: 10px;
+    margin-right:-10px;
+}
+.silder-extend a{
+    margin-right:10px;
+    float: left;
+}
+.main-inner-right{
+    height: 480px;
+    width: 190px;
+    background-color: #fff;
+    overflow: hidden;
+}
+/*user部分*/
+.user{
+    border-bottom: 1px solid #dfe0e1;
+    height: 84px;
+    padding:15px 18px 10px 15px;
+}
+.user-info{
+    width: 158px;
+    height: 50px;
+
+}
+.user-info .user-info-avatar{
+    /*display: block;*/
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-right: 8px;
+    background: url("../images/sprite_userinfo@1x.png") -70px 0px;
+}
+.user-info-avatar img{
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+}
+.user-info .user-info-avatar2{
+    /*display: block;*/
+    height: 50px;
+    width: 100px;
+    /*background: url("../images/sprite_userinfo@1x.png") -70px 0px;*/
+}
+.user .user-profit{
+    height: 20px;
+    width: 158px;
+    margin-top:10px;
+}
+.user-profit .xinren{
+    height: 18px;
+    width: 72px;
+    background-color: #fff;
+    border: 1px solid #e01222;
+    text-align: center;
+}
+.user-profit .huiyuan{
+    height: 18px;
+    width: 72px;
+    background-color: #fff;
+    border: 1px solid #e01222;
+    text-align: center;
+}
+.user-profit a{
+    line-height: 18px;
+    color:#e01222;
+}
+/*新闻*/
+.news{
+    height: 154px;
+    border-bottom: 1px solid #dfe0e1;
+    padding:0px 15px 0px 12px;
+}
+.news-tit{
+    height: 20px;
+    border-bottom: 1px solid #dfe0e1;
+    position: relative;
+}
+.news-tit .sale{
+    border-right: 1px solid #dfe0e1;
+    padding-right: 13px;
+    color:#333;
+    margin-right: 2px;
+}
+.news-tit .notice{
+    padding-left: 13px;
+    color:#333;
+}
+.news-tit .line{
+    width: 28px;
+    height: 2px;
+    background-color: #db192b;
+    position: absolute;
+    left:0;
+    bottom:-1px;
+}
+.news-con{
+    overflow: hidden;
+    margin-top: 13px;
+}
+.news-con li{
+    line-height: 28px;
+}
+
+/*生活服务*/
+.lift-service{
+    height: 209px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.lift-service .lift-service-item{
+    width: 47px;
+    height: 69px;
+    border:1px solid #e7e7e7;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding-top: 5px;
+    position: relative;
+}
+.lift-service-item .icon{
+    display: block;
+    width: 25px;
+    height: 30px;
+    background: url("../images/sprite_fs@1x.png") -90px -83px;
+    margin:0 auto;
+    padding-top: 5px;
+}
+.lift-service-item span{
+    display: block;
+    line-height: 22px;
+    padding-botom: 7px;
+    text-align: center;
+}
+.lift-service-item .corner{
+    height: 12px;
+    width: 12px;
+    display: block;
+    background-color: #e01121;
+    color:#fff;
+    position: absolute;
+    right:0px;
+    top:0px;
+    line-height: 12px;
+}
+.corner em{
+    display:block;
+    border-width:2px 6px;
+    border-style: solid;
+    border-color:#e01121 #e01121 transparent #e01121;
+}
+/*秒杀模块开始*/
+.seckill{
+    height: 300px;
+    margin-top: 10px;
+    position: relative;
+}
+.seckill .seck-tit{
+    height: 55px;
+    background: url("../images/seckill_hd.png");
+
+}
+.seck-tit .icon1{
+     height: 29px;
+     width: 29px;
+     background: url("../images/sprite_index@1x.png")-616px 135px;
+     position: absolute;
+     top:2px;
+     left:-11px;
+ }
+.seck-tit .icon2{
+    height: 47px;
+    width: 37px;
+    background: url("../images/sprite_index@1x.png")2px -219px;
+    position: absolute;
+    top:0px;
+    left:30px;
+}
+.seck-tit .miaosha{
+    line-height: 50px;
+
+}
+.seck-tit p{
+    font-size: 22px;
+    color: #fff;
+    font-family: "microsoft yahei";
+    margin-right: 12px;
+    padding-left: 80px;
+    float: left;
+}
+.seck-tit span{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-family: "microsoft yahei";
+}
+.time{
+    margin-top:10px;
+    margin-right:10px;
+}
+.more{
+    width: 22px;
+    height: 22px;
+    background: url("../images/sprite_index@1x.png") -151px -36px;
+    position: absolute;
+    top: 7px;
+    left:309px;
+}
+
+.seck-con{
+    height: 250px;
+}
+/*左边*/
+.seck-con-l{
+      height: 250px;
+      width: 1000px;
+      padding:12px 0px 18px 0px;
+}
+.seck-con-one{
+    height: 220px;
+    width: 199px;
+    border-right:1px solid #e7e7e7;
+    float: left;
+    position: relative;
+}
+.seck-con-one .hot{
+    width: 40px;
+    height: 56px;
+    background: url("../images/sprite_index@1x.png")3px -288px;
+    position: absolute;
+    top:0px;
+    left: 6px;
+}
+.seck-con-one .hot p{
+    display: block;
+    width: 34px;
+    line-height: 15px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.seck-con-one .photo{
+    width: 130px;
+    height: 130px;
+    background: url("../images/seck-item.jpg");
+    margin: 0 auto;
+}
+.seck-con-one .shade{
+    width: 148px;
+    height: 12px;
+    background: url("../images/sprite_index@1x.png")-7px -8px;
+    position: absolute;
+    top:123px;
+    left: 23px;
+}
+.seck-con-one .jieshao{
+    padding-top: 15px;
+    overflow: hidden;
+}
+.jieshao p a{
+    color:#c2a599;
+
+}
+.jieshao a:hover{
+    color:#f10215;
+}
+.jieshao span{
+    color:#f10214;
+    font:bold 16px "microsoft yahei";
+}
+/*右边*/
+.seck-con-r{
+    height: 250px;
+    width: 190px;
+}
+.seck-con-r a img{
+    width: 180px;
+    /*background: url("../images/seck-special.jpg!q90");*/
+    padding: 12px 10px 13px 0px;
+}
+/*秒杀模块结束*/
